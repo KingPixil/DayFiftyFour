@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Day Fifty Four | Password Checker">
+    <meta name="author" content="Kabir Shah">
+
+		<title>Password Checker</title>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet subresource' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="http://kingpixil.github.io/DayFiftyFour/favicon.png"/>
+	</head>
+	<body>
+		<div class="card">
+	<h1>Password Checker</h1>
+	<div class="password-field">
+		<input type="password" name="password" id="password" class="password"/>
+		<div class="tooltip" id="tooltip">
+			<div id="tooltip-text"></div>
+			<i id="password-icon" class="fa fa-frown-o"></i>
+		</div>
+	</div>
+</div>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>

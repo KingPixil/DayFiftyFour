@@ -1,0 +1,160 @@
+
+html, body {
+	  background-image: url('https://images.unsplash.com/photo-1449182325215-d517de72c42d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=528f9852c102ac3eb817c12aa758902a');
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  background-color: #e3e3e3;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card {
+  background: #fbfbfb;
+  border-radius: 0.15em;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  float: left;
+  font-size: 16px;
+  left: 50%;
+  margin: 0 auto;
+  padding: 24px 32px;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  width: 320px;
+}
+.card:hover {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.card h1 {
+  color: #111;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 8px 0 24px 0;
+  text-align: center;
+}
+.card p {
+  color: #303030;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 8px 0 24px 0;
+  text-align: center;
+}
+.card .password-field {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+.card .password-field .tooltip {
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+.card .password-field .tooltip:hover #tooltip-text {
+  display: block;
+}
+.card .password-field .tooltip #tooltip-text {
+  display: none;
+  position: absolute;
+  right: -1px;
+  top: calc(100% + 13px);
+  border: 3px solid orange;
+  width: 175px;
+  padding: 10px;
+  background: #fff;
+  font-size: 14px;
+}
+.card .password-field .tooltip #tooltip-text:after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  bottom: calc(100% + 3px);
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: orange;
+  border-bottom-width: 14px;
+}
+.card .password-field .tooltip .fa {
+  font-size: 20px;
+}
+.card .password-field input[type='password'] {
+  width: 100%;
+}
+.card .password-field input[type='password']:focus ~ .tooltip #tooltip-text {
+  display: block;
+}
+.card .password-field input[type='password'].password:focus {
+  border-color: #99ddff;
+}
+.card .password-field input[type='password'].score-0 {
+  border-color: red;
+}
+.card .password-field input[type='password'].score-0 ~ .tooltip .fa {
+  color: red;
+}
+.card .password-field input[type='password'].score-1 {
+  border-color: #ff4d4d;
+}
+.card .password-field input[type='password'].score-1 ~ .tooltip .fa {
+  color: #ff4d4d;
+}
+.card .password-field input[type='password'].score-2 {
+  border-color: #ff9999;
+}
+.card .password-field input[type='password'].score-2 ~ .tooltip .fa {
+  color: #ff9999;
+}
+.card .password-field input[type='password'].score-3 {
+  border-color: #ffc04d;
+}
+.card .password-field input[type='password'].score-3 ~ .tooltip .fa {
+  color: #ffc04d;
+}
+.card .password-field input[type='password'].score-4 {
+  border-color: #1aff1a;
+}
+.card .password-field input[type='password'].score-4 ~ .tooltip .fa {
+  color: #1aff1a;
+}
+.card input,
+.card textarea {
+  background: #fff;
+  border: 3px solid #eaeaea;
+  padding: 7px 10px;
+}
+.card input:focus,
+.card textarea:focus {
+  outline: none;
+}
